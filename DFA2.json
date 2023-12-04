@@ -1,0 +1,21 @@
+{
+    "Comment": "DFA test case that contains more transitions and states",
+    "Language": "Substring BAAB",
+    "States": ["Q0", "Q1", "Q2", "Q3", "Q4"],
+    "Alphabet": ["a", "b"],
+    "Transitions": [
+        ["Q0", "a", ["Q0"]],
+        ["Q0", "b", ["Q1"]],
+        ["Q1", "a", ["Q2"]],
+        ["Q1", "b", ["Q1"]],
+        ["Q2", "a", ["Q3"]],
+        ["Q2", "b", ["Q1"]],
+        ["Q3", "a", ["Q0"]],
+        ["Q3", "b", ["Q4"]],
+        ["Q4", "a", ["Q4"]],
+        ["Q4", "b", ["Q4"]]
+    ],
+    "Start State": ["Q0"],
+    "Accept States": ["Q4"]
+}
+

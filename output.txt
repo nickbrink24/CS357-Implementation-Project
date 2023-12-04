@@ -1,0 +1,7 @@
+States: "Q0", "Q1", "Q_new"
+Alphabet: 'a', 'b', 'e'
+Transitions: 
+    ["Q1","e",["Q0"]]
+    ["Q_new","e",["Q0"]]
+Start State: "Q_new"
+Accept States: "Q1", "Q_new"

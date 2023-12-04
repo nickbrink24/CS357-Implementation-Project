@@ -1,0 +1,22 @@
+{
+    "Comment": "DFA test case that contains longer state names, lots of transitions, and multiple accept states",
+    "Language": "Union of starts with A and has even number of B's",
+    "States": ["Q0,R0", "Q0,R1", "Q1,R0", "Q1,R1", "Q2,R0", "Q2,R1"],
+    "Alphabet": ["a", "b"],
+    "Transitions": [
+        ["Q0,R0", "a", ["Q1,R0"]],
+        ["Q0,R0", "b", ["Q2,R1"]],
+        ["Q0,R1", "a", ["Q1,R1"]],
+        ["Q0,R1", "b", ["Q2,R0"]],
+        ["Q1,R0", "a", ["Q1,R0"]],
+        ["Q1,R0", "b", ["Q1,R1"]],
+        ["Q1,R1", "a", ["Q1,R1"]],
+        ["Q1,R1", "b", ["Q1,R0"]],
+        ["Q2,R0", "a", ["Q2,R0"]],
+        ["Q2,R0", "b", ["Q2,R1"]],
+        ["Q2,R1", "a", ["Q2,R1"]],
+        ["Q2,R1", "b", ["Q2,R0"]]
+    ],
+    "Start State": ["Q0,R0"],
+    "Accept States": ["Q0,R0", "Q1,R0", "Q1,R1", "Q2,R0"]
+}

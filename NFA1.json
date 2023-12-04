@@ -1,0 +1,16 @@
+{
+    "Comment": "NFA test case that contains multiple accepting states and already has epsilon in the alphabet",
+    "Language": "Union of even number of 0's and multiple of 3 number of 0's",
+    "States": ["Q0", "Q1", "Q2", "Q3", "Q4", "Q5"],
+    "Alphabet": ["0", "e"],
+    "Transitions": [
+        ["Q0", "e", ["Q1", "Q3"]],
+        ["Q1", "0", ["Q2"]],
+        ["Q2", "0", ["Q1"]],
+        ["Q3", "0", ["Q4"]],
+        ["Q4", "0", ["Q5"]],
+        ["Q5", "0", ["Q3"]]
+    ],
+    "Start State": ["Q0"],
+    "Accept States": ["Q1", "Q3"]
+}

@@ -1,0 +1,13 @@
+{
+    "Comment": "Test case that contains incorrectly labeled tags",
+    "Q": ["Q0", "Q1"],
+    "Sigma": ["a", "b"],
+    "Delta": [
+        ["Q0", "a", ["Q1"]],
+        ["Q0", "b", ["Q0"]],
+        ["Q1", "a", ["Q0"]],
+        ["Q1", "b", ["Q1"]]
+    ],
+    "Start": ["Q0"],
+    "End": ["Q1"]
+}

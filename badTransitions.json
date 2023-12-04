@@ -1,0 +1,15 @@
+{
+    "Comment": "Test case with poorly formatted transitions",
+    "Errors": "Initial state not in set of states, duplicate transitions, symbol not in alphabet, end state not in set of states",
+    "States": ["Q0", "Q1"],
+    "Alphabet": ["a", "b"],
+    "Transitions": [
+        ["Q0", "a", ["Q1"]],
+        ["Q3", "b", ["Q0"]],
+        ["Q3", "b", ["Q0"]],
+        ["Q1", "c", ["Q0"]],
+        ["Q1", "b", ["Q4"]]
+    ],
+    "Start State": ["Q0"],
+    "Accept States": ["Q1"]
+}

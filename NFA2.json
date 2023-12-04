@@ -1,0 +1,15 @@
+{
+    "Comment": "NFA test case that contains more nondeterminism",
+    "Language": "Union of [accepts 'a' and 'ab'] and [accepts 'b' and 'ba]",
+    "States": ["Q0", "Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7", "Q8"],
+    "Alphabet": ["a", "b", "e"],
+    "Transitions": [
+        ["Q0", "e", ["Q1", "Q5"]],
+        ["Q1", "a", ["Q2", "Q4"]],
+        ["Q2", "b", ["Q3"]],
+        ["Q5", "b", ["Q6", "Q8"]],
+        ["Q6", "a", ["Q7"]]
+    ],
+    "Start State": ["Q0"],
+    "Accept States": ["Q3", "Q4", "Q7", "Q8"]
+}

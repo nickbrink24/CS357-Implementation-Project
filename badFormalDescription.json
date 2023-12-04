@@ -1,0 +1,14 @@
+{
+    "Comment": "Test case with errors in formal description minus the transitions",
+    "Errors": "Duplicate symbols, multiple starts, starts not in set of states, no quotes around Q4, accept states not in set of states",
+    "States": ["Q0", "Q1"],
+    "Alphabet": ["a", "b", "a"],
+    "Transitions": [
+        ["Q0", "a", ["Q1"]],
+        ["Q0", "b", ["Q0"]],
+        ["Q1", "a", ["Q0"]],
+        ["Q1", "b", ["Q1"]]
+    ],
+    "Start State": ["Q2", "Q1"],
+    "Accept States": ["Q3", Q4]
+}
