@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             // open the file and prepare to parse it
-            Object obj = new JSONParser().parse(new FileReader("DFA1.json"));
+            Object obj = new JSONParser().parse(new FileReader("input.json"));
             JSONObject json_obj = (JSONObject)obj;
 
             // read the input
